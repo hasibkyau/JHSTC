@@ -32,6 +32,7 @@ void loop() {
   display.print("Computer Science & Engineering");
   
   display.display();
+  display.clearDisplay();
   delay(2000);
   
 }
