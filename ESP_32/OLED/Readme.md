@@ -7,9 +7,7 @@
 3. After installing the SSD1306 library from Adafruit, type “GFX” in the search box and install the library.
 4. After installing the libraries, restart your Arduino IDE.
 
-### Pin Interface:
 ### Pin	    ESP32
-### .............
 ### Vin	    3.3V
 ### GND	    GND
 ### SCL	    GPIO 22
