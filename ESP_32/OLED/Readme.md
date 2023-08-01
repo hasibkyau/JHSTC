@@ -8,7 +8,7 @@
 4. After installing the libraries, restart your Arduino IDE.
 
 Pin Interface:
-Pin	    ESP32
+[] Pin	    ESP32
 .............
 Vin	    3.3V
 GND	    GND
