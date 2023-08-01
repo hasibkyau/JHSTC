@@ -4,3 +4,5 @@
 # Follow the next steps to install those libraries.
 1. Open your Arduino IDE and go to Sketch > Include Library > Manage Libraries. The Library Manager should open.
 2. Type “SSD1306” in the search box and install the SSD1306 library from Adafruit.
+3. After installing the SSD1306 library from Adafruit, type “GFX” in the search box and install the library.
+4. After installing the libraries, restart your Arduino IDE.
