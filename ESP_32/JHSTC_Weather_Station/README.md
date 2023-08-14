@@ -1,3 +1,4 @@
-# Agro-Iot-Mushroom-farming
-![](https://github.com/GitHopperX/Agro-Iot-Mushroom-farming/blob/main/Images/weather_station1.png)
-![](https://github.com/GitHopperX/Agro-Iot-Mushroom-farming/blob/main/Images/circuit_prototype.jpg)
+# JHSTC Weather Station
+![](https://github.com/hasibkyau/JHSTC/blob/master/ESP_32/JHSTC_Weather_Station/JHSTC_Weather_Station/data/hello.jpg)
+
+
