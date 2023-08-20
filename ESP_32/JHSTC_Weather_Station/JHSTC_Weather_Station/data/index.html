@@ -11,8 +11,14 @@
       max-width: 800px;
       height: 400px;
       margin: 0 auto;
+      background-image: url("hello.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-blend-mode: multiply;
+      
+      
     }
-
     h2 {
       font-family: Arial;
       font-size: 2.5rem;
@@ -24,71 +30,132 @@
       font-size: 1rem;
       text-align: left;
     }
+    .title{
+      color: blue;
+    }
 
     h3 {
       font-family: Arial;
       font-size: 2rem;
       text-align: center;
     }
+    h4{
+      font-fmaily: popins;
+      font-size: 1.3rem;
+      text-align: center;
+      color: blue;
+    }
 
     table {
       border: 3px solid rgb(7, 47, 85);
+      
+    }
+    .menu-item{
+      text-align: center;
+    }
+    .menu{
+      background: blue;
+      color: white;
+      padding: 8px;
+    }
+    .menu:hover{
+      background: red;
+      color: white;
+    }
+    .hello{
+      margin: 5px;
+      background-color: blue;
+      color: white;
+      
+      font-size: 14px;
+      padding-left: 8px;
+    }
+   
+    .btnn{
+      background-color: blue;
+      color: #ffffff;
+      padding: 5px 15px 5px 15px;
+    }
+    .btnn:hover{
+      background: red;
+      color: white;
+    }
+    .data-title{
+      font-weight: bold;
+      font-size: 18px;
+    }
+    .data{
+      font-weight: bold;
+    }
+    .label{
+      font-weight: bold;
+      color: black
+    }
+    .label-content{
+      margin-top: 140px;
+    }
+    .Graph-content{
+      margin-top: 50px;
     }
   </style>
 
-  <h2> EcoLife AgroFarm </h2>
-  <button onclick="location.href='index.html'">HOME</button>
-  <button onclick="location.href='weatherStation.html'">Weather Station</button>
-  <button onclick="location.href='automation.html'">Automation</button>
-
+  <h2 class="title"> JHSTC WEATHER STATION</h2>
+  <h3>Computer Science & Engineering</h3>
+  <h4>By Sajjad</h4>
+  <div class="menu-item">
+  <button class="menu" onclick="location.href='index.html'">HOME</button>
+  <button class="menu" onclick="location.href='weatherStation.html'">Weather Station</button>
+  <button class="menu" onclick="location.href='automation.html'">Automation</button>
+  </div>
 </head>
 
 <body>
-  <h3>Farm Status</h3>
+  <h3>Weather Status</h3>
   <table style="width:100%">
     <tr>
-      <th>Current Weather</th>
-      <th>Wanted Weather</th>
+      <th class="data-title">Current Weather</th>
+      <th class="data-title">Wanted Weather</th>
 
     </tr>
 
     <tr>
-      <td>temperature</td>
+      <td class="data">temperature</td>
       <td id="TemperatureCell"></td>
-      <td id="WantedTemperatureCell">nothing</td>
+      <td class="data" id="WantedTemperatureCell">nothing</td>
     </tr>
 
     <tr>
-      <td>humidity</td>
+      <td class="data">humidity</td>
       <td id="HumidityCell"></td>
-      <td id="WantedHumidityCell">nothing</td>
+      <td class="data" id="WantedHumidityCell">nothing</td>
     </tr>
 
     <tr>
-      <td>pressure</td>
+      <td class="data">pressure</td>
       <td id="PressureCell"></td>
-      <td id="WantedPressureCell">nothing</td>
+      <td class="data" id="WantedPressureCell">nothing</td>
     </tr>
 
   </table>
 
   <h3> Automate Weather</h3>
 
-
-    <label for="fname">temperature:</label>
-    <input id="inputTemperature" type="text" value="22"><br>
-    <label for="lname">humidity:</label>
-    <input id="inputHumidity" type="text" value="98"><br>
-    <label for="lname">Pressure:</label>
-    <input id="inputPressure" type="text" value="45"><br><br>
-    <button onclick="updateTemp()">Submit</button><br>
-
+  <div class="label-content">
+    <label class="label" for="fname">Temperature:</label>
+    <input class="hello" id="inputTemperature" type="text" value="22"><br>
+    <label class="label" for="lname">Humidity:</label>
+    <input class="hello" id="inputHumidity" type="text" value="98"><br>
+    <label class="label" for="lname">Pressure:</label>
+    <input class="hello" id="inputPressure" type="text" value="45"><br><br>
+    <button class="btnn" onclick="updateTemp()">Submit</button><br>
+  </div>
   
-  <h3>Weather Station</h3>
+  <div class ="Graph-content">
+  <h3>Weather Graph</h3>
   <div id="chart-temperature" class="container"></div>
   <div id="chart-humidity" class="container"></div>
   <div id="chart-pressure" class="container"></div>
-
+  </div>
 </body>
 
 <script>
